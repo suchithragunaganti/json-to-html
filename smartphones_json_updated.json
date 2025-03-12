@@ -1,0 +1,41 @@
+{
+    "smartphones": [
+      {
+        "name": "iPhone 15 Pro",
+        "brand": "Apple",
+        "features": ["A17 Pro chip", "48MP Main Camera", "USB-C port", "Titanium Design"],
+        "image": "81dT7CUY6GL._SL1500_.jpg"
+      },
+      {
+        "name": "Samsung Galaxy S24 Ultra",
+        "brand": "Samsung",
+        "features": ["Snapdragon 8 Gen 3", "200MP Camera", "S Pen Support", "5000mAh Battery"],
+        "image": "download (1).jpeg"
+      },
+      {
+        "name": "Google Pixel 8 Pro",
+        "brand": "Google",
+        "features": ["Tensor G3 Chip", "50MP Camera", "7 Years Updates", "Super Actua Display"],
+        "image": "81YofuHBMZL.__AC_SX300_SY300_QL70_FMwebp_.webp"
+      },
+      {
+        "name": "OnePlus 12",
+        "brand": "OnePlus",
+        "features": ["Snapdragon 8 Gen 3", "50MP Camera", "120Hz AMOLED", "5000mAh Battery"],
+        "image": "5310.avif"
+      },
+      {
+        "name": "Xiaomi 14 Pro",
+        "brand": "Xiaomi",
+        "features": ["Snapdragon 8 Gen 3", "50MP Leica Camera", "120W Fast Charging", "LTPO AMOLED"],
+        "image": "Xiaomi-14-Pro-DB-709x800-1698330513.avif"
+      },
+      {
+        "name": "Sony Xperia 1 V",
+        "brand": "Sony",
+        "features": ["4K OLED Display", "Snapdragon 8 Gen 2", "12GB RAM", "5000mAh Battery"],
+        "image": "https://via.placeholder.com/150"
+      }
+    ]
+  }
+  

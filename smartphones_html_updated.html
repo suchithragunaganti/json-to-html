@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphones List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        ul {
+            text-align: left;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        fetch('smartphones_json_updated.json')
+        .then(response => response.json())
+        .then(data => {
+            const container = document.body;
+            data.smartphones.forEach(phone => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.innerHTML = `
+                    <img src="${phone.image}" alt="${phone.name}">
+                    <h2>${phone.name}</h2>
+                    <h3>${phone.brand}</h3>
+                    <ul>
+                        ${phone.features.map(feature => `<li>${feature}</li>`).join('')}
+                    </ul>
+                `;
+                container.appendChild(card);
+            });
+        })
+        .catch(error => console.error('Error loading JSON:', error));
+    </script>
+</body>
+</html>
